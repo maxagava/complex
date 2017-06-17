@@ -20,14 +20,14 @@ complex::complex(double a, double b)
 	imaginary = b;
 }
 
-/*void complex::set()
+void complex::set()
 {
 cout << "Действительная часть КЧ: ";
 cin >> real;
 cout << "Мнимая часть КЧ: ";
 cin >> imaginary;
 cout << endl;
-}*/
+}
 
 complex::complex(const complex& copy)
 {
@@ -72,7 +72,7 @@ complex complex::sum(complex &a)
 	return complex(real + a.real, imaginary + a.imaginary);
 }
 
-/*
+
 void complex::print(std::ostream&stream) const
 {
 if (imaginary > 0)
@@ -87,7 +87,7 @@ else
 stream << real << " " << imaginary << "i" << endl;
 }
 }
-*/
+
 
 complex complex::sub(complex &a)
 {
